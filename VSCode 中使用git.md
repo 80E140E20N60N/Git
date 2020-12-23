@@ -1,6 +1,4 @@
-> 本文由 [简悦 SimpRead](http://ksria.com/simpread/) 转码， 原文地址 [blog.csdn.net](https://blog.csdn.net/weixin_38023551/article/details/105785223)
-
-基本上使用
+基本使用
 =====
 
 在一个目录下 clone 项目；  
@@ -11,7 +9,7 @@ git clone XXXXXX.git
 
 ```
 
-使用 VScode 打开项目
+使用 VScode 打开项目     注：可以Git Bash 提交项目文件到github仓库中，然后再用VScode打开项目
 --------------
 
 右击通过 Code 打开。
