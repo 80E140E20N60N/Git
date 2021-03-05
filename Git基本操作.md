@@ -550,3 +550,6 @@ git pull 远程仓库别名
 
 
 ```
+### 提交代码10053错误
+git提交报错信息：fatal: unable to access ‘https://github.com/*/.git/’: OpenSSL SSL_read: Connection was aborted, errno 10053
+解决方案：git config --global http.sslVerify "false"
