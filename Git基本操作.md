@@ -553,5 +553,6 @@ git pull 远程仓库别名
 ### 提交代码10053错误
 git提交报错信息：fatal: unable to access ‘https://github.com/*/.git/’: OpenSSL SSL_read: Connection was aborted, errno 10053
 ```
-解决方案：git config --global http.sslVerify "false"
+解决方案：在克隆完毕的仓库中将http.sslVerify设置为"false"（把忽略证书错误的设置限定在特定的仓库），命令如下：
+    git config --global http.sslVerify "false"
 ```
