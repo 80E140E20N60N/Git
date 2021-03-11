@@ -556,3 +556,9 @@ git提交报错信息：fatal: unable to access ‘https://github.com/*/.git/’
 解决方案：在克隆完毕的仓库中将http.sslVerify设置为"false"（把忽略证书错误的设置限定在特定的仓库），命令如下：
     git config --global http.sslVerify "false"
 ```
+
+### ! [rejected] master -> master (fetch first)问题的解决方案
+git提交报错信息： ![](https://img-blog.csdnimg.cn/20181216111747901.png) 
+```
+解决方案：git提供了一种强制上传的方式：git push -f ，它会忽略版本不一致等问题，强制将本地库上传的远程库，但是一定要谨慎使用，因为-f会用本地库覆盖掉远程库，如果远程库上有重要更新，或者有其他同伴做的修改，也都会被覆盖，所以一定要在确定无严重后果的前提下使用此操作。
+```
