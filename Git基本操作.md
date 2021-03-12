@@ -435,7 +435,7 @@ git 中的分支的代码互相独立，互不影响。一般有master主分支�
 
 > 命令：`git checkout -b 分支名字`   
 
-作用：相当于执行了`git branch 分支名字`再执行`git checkout 分支命令`这两条命令，只是用这个命令更方便，一般开发中比较常用这条命令创建分支。例： `git checkout -b dev` 创建开发分支
+作用：相当于执行了`git branch 分支名字`再执行`git checkout 分支命令`这两条命令，更方便，一般开发中比较常用这条命令创建分支。例： `git checkout -b dev` 创建并切换到开发分支
 
 ![](http://157.122.54.189:9092/upload/zybdoc/git/imgs/35.png)
 
