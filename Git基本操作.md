@@ -562,3 +562,10 @@ git提交报错信息： ![](https://img-blog.csdnimg.cn/20181216111747901.png)
 ```
 解决方案：git提供了一种强制上传的方式：git push -f ，它会忽略版本不一致等问题，强制将本地库上传的远程库，但是一定要谨慎使用，因为-f会用本地库覆盖掉远程库，如果远程库上有重要更新，或者有其他同伴做的修改，也都会被覆盖，所以一定要在确定无严重后果的前提下使用此操作。
 ```
+
+### fatal: remote origin already exists
+git报错信息：fatal: remote origin already exists   
+```
+解决方案：由于本地的库已经连接了一个线上的仓库，如果直接连接到新远程仓库, 会报错，需要先把原来的连接删除
+指令：git remote rm origin
+```
