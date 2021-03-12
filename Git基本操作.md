@@ -393,9 +393,7 @@ git reset --hard 683222716cf61c6e67e46ac33cc4c75db80100a1
 1.11. 分支管理
 ----------
 
-git 的分支就像王者荣耀游戏里三条路，每条路的英雄可以自己补兵对线，他们补兵对线获得的经验和金币是互相独立，互不影响的。git 中的分支也具有相同的特性，分支的代码互相独立，互不影响。
-
-![](http://157.122.54.189:9092/upload/zybdoc/git/imgs/branch.jpeg)
+git 中的分支的代码互相独立，互不影响。一般有master主分支，dev开发分支
 
 ### 1.11.1. 分支使用的场景
 
@@ -427,17 +425,17 @@ git 的分支就像王者荣耀游戏里三条路，每条路的英雄可以自�
 
 ### 1.11.4. 切换分支
 
-> 命令：`git checkout 分支名字`
+> 命令：`git checkout 分支名字`  
 
-作用：切换到其他分支进行开发。
+作用：切换到其他分支进行开发。例： `git checkout master` 切换回主分支
 
 ![](http://157.122.54.189:9092/upload/zybdoc/git/imgs/34.png)
 
 ### 1.11.5. 创建并切换分支
 
-> 命令：`git checkout -b 分支名字`
+> 命令：`git checkout -b 分支名字`   
 
-作用：相当于执行了`git branch 分支名字`再执行`git checkout 分支命令`这两条命令，只是用这个命令更方便，一般开发中比较常用这条命令创建分支。
+作用：相当于执行了`git branch 分支名字`再执行`git checkout 分支命令`这两条命令，只是用这个命令更方便，一般开发中比较常用这条命令创建分支。例： `git checkout -b dev` 创建开发分支
 
 ![](http://157.122.54.189:9092/upload/zybdoc/git/imgs/35.png)
 
@@ -463,7 +461,7 @@ git 的分支就像王者荣耀游戏里三条路，每条路的英雄可以自�
 
 `注意：可以使用git checkout 分支名称切换到想要合并的目标分支`
 
-演示：将 dev 分支的代码合并到 main 分支
+演示：将 dev 分支的代码合并到 main 分支，需要先切换到master分支，然后执行git merge dev
 
 ![](http://157.122.54.189:9092/upload/zybdoc/git/imgs/37.png)
 
