@@ -461,9 +461,17 @@ git 中的分支的代码互相独立，互不影响。一般有master主分支�
 
 `注意：可以使用git checkout 分支名称切换到想要合并的目标分支`
 
-演示：将 dev 分支的代码合并到 main 分支，需要先切换到master分支，然后执行git merge dev
+演示：将 dev 分支的代码合并到 master 分支，需要先切换到 master 分支，然后执行 git merge dev
 
 ![](http://157.122.54.189:9092/upload/zybdoc/git/imgs/37.png)
+
+注意：为避免分支合并冲突,可以多执行 git push 和 git pull
+
+### 1.11.8. 推送dev分支到远程
+
+> 命令：`git push origin 分支名字`
+
+作用：`git checkout -b dev`创建的分支默认只存在于本地，而把dev分支的代码推送到远程仓库，可以执行git push origin dev
 
 1.12. 远程仓库相关指令
 --------------
