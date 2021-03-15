@@ -486,11 +486,11 @@ git 中的分支的代码互相独立，互不影响。一般有master主分支�
 作用：`git checkout -b dev`创建的分支默认只存在于本地，而把dev分支的代码推送到远程仓库，可以执行git push origin dev
 
 
-一般在本地建立自己的分支zzh，写功能，正常做git add   git commit提交
-写好后，git checkout dev 切换到dev分支
-先git pull拉取一次代码，获取远程库里的更新
-然后将自己分支zzh的代码合并到dev分支 git merge zzh
-需要git commit提交一次
+一般在本地建立自己的分支zzh，写功能，正常做git add   git commit提交；
+写好后，git checkout dev 切换到dev分支；
+先git pull拉取一次代码，获取远程库里的更新；
+然后将自己分支zzh的代码合并到dev分支 git merge zzh；
+需要git commit提交一次；
 然后git push推送到远程仓库的dev分支
 
 1.12. 远程仓库相关指令
